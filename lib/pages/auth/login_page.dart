@@ -61,7 +61,7 @@ class LoginPage extends StatelessWidget {
               ),
               CustomButton(
                 margin: 50.w,
-                title: 'Login',
+                title: 'Masuk',
               ),
               SizedBox(
                 height: verticalSpaceSmall,

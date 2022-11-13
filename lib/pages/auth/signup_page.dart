@@ -71,7 +71,7 @@ class SignupPage extends StatelessWidget {
               ),
               CustomButton(
                 margin: 50.w,
-                title: 'Login',
+                title: 'Daftar',
               ),
               SizedBox(
                 height: verticalSpaceSmall,
