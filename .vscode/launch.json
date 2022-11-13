@@ -1,0 +1,43 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "rooda_apps",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "rooda_apps (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "rooda_apps (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+			"name": "Mi",
+			"request": "launch",
+			"type": "dart",
+			"deviceId": "4ef32db2"
+		},
+        {
+			"name": "Redmi",
+			"request": "launch",
+			"type": "dart",
+			"deviceId": "JRH6MBEY9THICENJ"
+		},
+    ],
+    "compounds": [
+		{
+			"name": "All Devices",
+			"configurations": ["Mi", "Redmi"],
+		}
+    ]
+}
