@@ -33,6 +33,12 @@
 			"type": "dart",
 			"deviceId": "JRH6MBEY9THICENJ"
 		},
+        {
+			"name": "Web",
+			"request": "launch",
+			"type": "dart",
+			"deviceId": "chrome"
+		},
     ],
     "compounds": [
 		{

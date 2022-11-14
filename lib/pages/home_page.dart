@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:rooda_apps/themes/themes.dart';
 import 'package:rooda_apps/widgets/motor_card.dart';
 import 'package:rooda_apps/widgets/search_bar.dart';
@@ -471,7 +472,9 @@ class KategoriTitle extends StatelessWidget {
           ),
           withLihatSemua
               ? GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Get.toNamed('/katalogMotorPage');
+                  },
                   child: Text(
                     'Lihat Semua',
                     style: normalTextStyle,

@@ -18,7 +18,6 @@ class MotorCard extends StatefulWidget {
   void Function() lihatDetailButton, addButton;
   bool withSpace;
   bool isFav = false;
-
   @override
   State<MotorCard> createState() => _MotorCardState();
 }
