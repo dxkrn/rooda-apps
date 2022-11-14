@@ -30,7 +30,7 @@ class InputForm extends StatelessWidget {
         ),
         Container(
           // width: 250.w,
-          height: 50,
+          height: 50.w,
           padding: EdgeInsets.symmetric(
             horizontal: 10.w,
           ),

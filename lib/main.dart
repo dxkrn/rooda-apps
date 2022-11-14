@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: bgColor,
         ),
         debugShowCheckedModeBanner: false,
-        initialRoute: '/loginPage',
+        initialRoute: '/',
         getPages: [
           GetPage(
             name: '/',

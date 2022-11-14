@@ -35,7 +35,7 @@ TextStyle normalTextStyle = GoogleFonts.poppins(
 );
 
 TextStyle heading4TextStyle = GoogleFonts.poppins(
-  fontSize: 10.sp,
+  fontSize: 12.sp,
   fontWeight: FontWeight.normal,
   color: whiteColor,
 );
