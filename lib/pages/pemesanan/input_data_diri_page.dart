@@ -184,6 +184,7 @@ class _InputDataDiriPageState extends State<InputDataDiriPage> {
                           ),
                           child: Center(
                             child: TextField(
+                              cursorColor: primaryColor,
                               maxLines: 4,
                               style: normalTextStyle.copyWith(
                                 color: darkColor,

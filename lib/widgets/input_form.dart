@@ -44,6 +44,7 @@ class InputForm extends StatelessWidget {
           ),
           child: Center(
             child: TextField(
+              cursorColor: primaryColor,
               style: normalTextStyle.copyWith(
                 color: darkColor,
               ),
