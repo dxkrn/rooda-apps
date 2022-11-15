@@ -13,6 +13,8 @@ import 'package:rooda_apps/pages/riwayat%20transaksi/riwayat_pembelian_detail_pa
 import 'package:rooda_apps/pages/riwayat%20transaksi/riwayat_transaksi_page.dart';
 import 'package:rooda_apps/themes/themes.dart';
 
+import 'pages/riwayat transaksi/riwayat_servis_detail_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -103,6 +105,14 @@ class MyApp extends StatelessWidget {
           GetPage(
             name: '/riwayatPembelianDetailPage',
             page: () => const RiwayatPembelianDetailPage(),
+            transition: Transition.fade,
+            transitionDuration: const Duration(
+              milliseconds: 800,
+            ),
+          ),
+          GetPage(
+            name: '/riwayatServisDetailPage',
+            page: () => const RiwayatServisDetailPage(),
             transition: Transition.fade,
             transitionDuration: const Duration(
               milliseconds: 800,

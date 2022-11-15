@@ -139,7 +139,7 @@ class RiwayatServisCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        // Get.toNamed('/');
+        Get.toNamed('/riwayatServisDetailPage');
       },
       child: Container(
         width: deviceWidth - 48.w,

@@ -5,8 +5,8 @@ import 'package:rooda_apps/themes/themes.dart';
 import 'package:rooda_apps/widgets/custom_button.dart';
 import 'package:rooda_apps/widgets/detail_row.dart';
 
-class RiwayatPembelianDetailPage extends StatelessWidget {
-  const RiwayatPembelianDetailPage({super.key});
+class RiwayatServisDetailPage extends StatelessWidget {
+  const RiwayatServisDetailPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class RiwayatPembelianDetailPage extends StatelessWidget {
           ),
         ),
         title: Text(
-          'Riwayat Pembelian',
+          'Riwayat Servis',
           style: heading1TextStyle,
         ),
       ),
@@ -91,7 +91,7 @@ class RiwayatPembelianDetailPage extends StatelessWidget {
                               ),
                               //NOTE : DETAIL ROWS
                               DetailRow(
-                                title: 'Pembeli',
+                                title: 'Pemilik',
                                 value: 'Ahmad Subagyo Listyo Rahardi',
                               ),
                               DetailRow(
@@ -104,20 +104,20 @@ class RiwayatPembelianDetailPage extends StatelessWidget {
                                 value: 'Vespa Primavera',
                               ),
                               DetailRow(
-                                title: 'Pemesanan',
-                                value: '22-09-2022 10.00',
+                                title: 'Tanggal',
+                                value: '22-10-2022 10.00',
                               ),
                               DetailRow(
-                                title: 'Pelunasan',
-                                value: '22-09-2022 13.10',
+                                title: 'Spare Part',
+                                value: 'Rp65.000,00',
+                              ),
+                              DetailRow(
+                                title: 'Mekanik',
+                                value: 'Rp10.000,00',
                               ),
                               DetailRow(
                                 title: 'Total',
-                                value: 'Rp48.000.000,00',
-                              ),
-                              DetailRow(
-                                title: 'Status',
-                                value: 'Lunas',
+                                value: 'Rp75.000,00',
                               ),
                             ],
                           ),
@@ -144,21 +144,6 @@ class RiwayatPembelianDetailPage extends StatelessWidget {
                 ],
               ),
             ],
-          ),
-          Positioned(
-            bottom: 24.w,
-            child: Container(
-              width: deviceWidth,
-              alignment: Alignment.center,
-              child: CustomButton(
-                width: 210.w,
-                margin: 0.w,
-                title: 'Unggah Bukti',
-                onTap: () {
-                  // Get.toNamed('/inputDataDiriPage');
-                },
-              ),
-            ),
           ),
         ],
       ),
