@@ -8,6 +8,7 @@ import 'package:rooda_apps/pages/motor/detail_motor_page.dart';
 import 'package:rooda_apps/pages/motor/katalog_motor_page.dart';
 import 'package:rooda_apps/pages/onboarding_page.dart';
 import 'package:rooda_apps/pages/pemesanan/input_data_diri_page.dart';
+import 'package:rooda_apps/pages/pemesanan/payment_page.dart';
 import 'package:rooda_apps/themes/themes.dart';
 
 void main() {
@@ -74,6 +75,14 @@ class MyApp extends StatelessWidget {
           GetPage(
             name: '/inputDataDiriPage',
             page: () => const InputDataDiriPage(),
+            transition: Transition.fade,
+            transitionDuration: const Duration(
+              milliseconds: 800,
+            ),
+          ),
+          GetPage(
+            name: '/paymentPage',
+            page: () => const PaymentPage(),
             transition: Transition.fade,
             transitionDuration: const Duration(
               milliseconds: 800,

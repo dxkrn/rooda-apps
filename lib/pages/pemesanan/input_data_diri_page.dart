@@ -257,7 +257,9 @@ class _InputDataDiriPageState extends State<InputDataDiriPage> {
                                     height: 40,
                                     margin: 10.w,
                                     title: 'Lanjut',
-                                    onTap: () {},
+                                    onTap: () {
+                                      Get.toNamed('/paymentPage');
+                                    },
                                   )
                                 ],
                               ),

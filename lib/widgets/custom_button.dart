@@ -28,7 +28,7 @@ class CustomButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(30.r),
           onTap: onTap,
           child: Container(
-            height: height.h,
+            height: height.w,
             alignment: Alignment.center,
             child: Text(
               title,
