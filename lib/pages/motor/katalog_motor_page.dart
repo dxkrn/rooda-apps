@@ -6,7 +6,7 @@ import 'package:rooda_apps/themes/themes.dart';
 import 'package:rooda_apps/widgets/motor_card.dart';
 import 'package:rooda_apps/widgets/search_bar.dart';
 
-int kategoriActiveIndex = 0;
+// int kategoriActiveIndex = 0;
 
 List<Widget> kategoriList = [
   SizedBox(width: 24.w),

@@ -9,6 +9,7 @@ import 'package:rooda_apps/pages/motor/katalog_motor_page.dart';
 import 'package:rooda_apps/pages/onboarding_page.dart';
 import 'package:rooda_apps/pages/pemesanan/input_data_diri_page.dart';
 import 'package:rooda_apps/pages/pemesanan/payment_page.dart';
+import 'package:rooda_apps/pages/riwayat%20transaksi/riwayat_transaksi_page.dart';
 import 'package:rooda_apps/themes/themes.dart';
 
 void main() {
@@ -83,6 +84,16 @@ class MyApp extends StatelessWidget {
           GetPage(
             name: '/paymentPage',
             page: () => const PaymentPage(),
+            transition: Transition.fade,
+            transitionDuration: const Duration(
+              milliseconds: 800,
+            ),
+          ),
+
+          //NOTE: RIWAYAT TRANSAKSI
+          GetPage(
+            name: '/riwayatTransaksiPage',
+            page: () => const RiwayatTransaksiPage(),
             transition: Transition.fade,
             transitionDuration: const Duration(
               milliseconds: 800,
