@@ -4,6 +4,7 @@ import 'package:get/route_manager.dart';
 import 'package:rooda_apps/pages/auth/login_page.dart';
 import 'package:rooda_apps/pages/auth/signup_page.dart';
 import 'package:rooda_apps/pages/home_page.dart';
+import 'package:rooda_apps/pages/motor/detail_motor_page.dart';
 import 'package:rooda_apps/pages/motor/katalog_motor_page.dart';
 import 'package:rooda_apps/pages/onboarding_page.dart';
 import 'package:rooda_apps/themes/themes.dart';
@@ -54,6 +55,14 @@ class MyApp extends StatelessWidget {
           GetPage(
             name: '/katalogMotorPage',
             page: () => const KatalogMotorPage(),
+            transition: Transition.fade,
+            transitionDuration: const Duration(
+              milliseconds: 800,
+            ),
+          ),
+          GetPage(
+            name: '/detailMotorPage',
+            page: () => const DetailMotorPage(),
             transition: Transition.fade,
             transitionDuration: const Duration(
               milliseconds: 800,

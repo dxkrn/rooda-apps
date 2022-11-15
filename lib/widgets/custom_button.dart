@@ -7,13 +7,15 @@ class CustomButton extends StatelessWidget {
     Key? key,
     required this.margin,
     required this.title,
+    this.width = 0,
   }) : super(key: key);
   String title;
-  double margin;
+  double margin, width;
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: margin),
+      width: width,
       child: Material(
         color: primaryColor,
         borderRadius: BorderRadius.circular(30.r),

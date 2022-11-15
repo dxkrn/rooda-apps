@@ -248,7 +248,9 @@ class _HomePageState extends State<HomePage> {
                               desc: 'Lorem Ipsum Dolor sit amet',
                               price: 'Rp48.000.000,00',
                               imgSrc: 'assets/images/img_motor_vespa.png',
-                              lihatDetailButton: () {},
+                              lihatDetailButton: () {
+                                Get.toNamed('/detailMotorPage');
+                              },
                               addButton: () {},
                               withSpace: true,
                             ),
@@ -258,7 +260,9 @@ class _HomePageState extends State<HomePage> {
                               desc: 'Lorem Ipsum Dolor sit amet',
                               price: 'Rp48.000.000,00',
                               imgSrc: 'assets/images/img_motor_vespa.png',
-                              lihatDetailButton: () {},
+                              lihatDetailButton: () {
+                                Get.toNamed('/detailMotorPage');
+                              },
                               addButton: () {},
                               withSpace: true,
                             ),
@@ -268,7 +272,9 @@ class _HomePageState extends State<HomePage> {
                               desc: 'Lorem Ipsum Dolor sit amet',
                               price: 'Rp48.000.000,00',
                               imgSrc: 'assets/images/img_motor_vespa.png',
-                              lihatDetailButton: () {},
+                              lihatDetailButton: () {
+                                Get.toNamed('/detailMotorPage');
+                              },
                               addButton: () {},
                               withSpace: true,
                             ),
