@@ -37,6 +37,14 @@ class _MotorCardState extends State<MotorCard> {
             decoration: BoxDecoration(
               color: whiteColor,
               borderRadius: BorderRadius.circular(20.r),
+              boxShadow: [
+                BoxShadow(
+                  color: darkColor.withOpacity(0.1),
+                  spreadRadius: 0,
+                  blurRadius: 10,
+                  offset: const Offset(0, 5),
+                ),
+              ],
             ),
           ),
           Positioned(
