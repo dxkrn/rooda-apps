@@ -7,10 +7,13 @@ class CustomButton extends StatelessWidget {
     Key? key,
     required this.margin,
     required this.title,
+    required this.onTap,
+    this.height = 50,
     this.width = 0,
   }) : super(key: key);
   String title;
-  double margin, width;
+  double margin, width, height;
+  void Function() onTap;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -23,15 +26,15 @@ class CustomButton extends StatelessWidget {
           splashColor: secondaryColor,
           highlightColor: whiteColor.withAlpha(40),
           borderRadius: BorderRadius.circular(30.r),
+          onTap: onTap,
           child: Container(
-            height: 50.h,
+            height: height.h,
             alignment: Alignment.center,
             child: Text(
               title,
               style: heading2TextStyle,
             ),
           ),
-          onTap: () {},
         ),
       ),
     );

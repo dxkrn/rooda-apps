@@ -72,6 +72,7 @@ class SignupPage extends StatelessWidget {
               CustomButton(
                 margin: 50.w,
                 title: 'Daftar',
+                onTap: () {},
               ),
               SizedBox(
                 height: verticalSpaceSmall,

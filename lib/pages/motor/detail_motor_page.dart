@@ -263,6 +263,9 @@ class _DetailMotorPageState extends State<DetailMotorPage> {
                 width: 210.w,
                 margin: 0.w,
                 title: 'Pesan Sekarang',
+                onTap: () {
+                  Get.toNamed('/inputDataDiriPage');
+                },
               ),
             ),
           ),
@@ -300,7 +303,7 @@ class SpesifikasiRow extends StatelessWidget {
               ),
               textAlign: TextAlign.right,
               maxLines: 10,
-              overflow: TextOverflow.ellipsis,
+              // overflow: TextOverflow.ellipsis,
             ),
           ),
         ],
