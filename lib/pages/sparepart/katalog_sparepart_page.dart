@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:rooda_apps/themes/themes.dart';
+import 'package:rooda_apps/widgets/search_bar.dart';
 
 class KatalogSparepartPage extends StatelessWidget {
   const KatalogSparepartPage({super.key});
@@ -29,67 +30,89 @@ class KatalogSparepartPage extends StatelessWidget {
           style: heading1TextStyle,
         ),
       ),
-      body: ListView(
-        physics: const BouncingScrollPhysics(),
+      body: Stack(
         children: [
-          SizedBox(
-            height: verticalSpaceBig,
-          ),
-          GridView.count(
-            primary: false,
-            crossAxisCount: 2,
-            mainAxisSpacing: 20.w,
-            crossAxisSpacing: 10.w,
-            shrinkWrap: true,
-            padding: EdgeInsets.symmetric(horizontal: 24.w),
-            childAspectRatio: 15 / 25,
+          ListView(
+            physics: const BouncingScrollPhysics(),
             children: [
-              SparepartCard(
-                sparePartName: 'Rantai',
-                motorName: 'CBR 150R',
-                price: 'Rp150.000,00',
-                imgSrc: 'assets/images/img_sparepart_rantai.png',
+              SizedBox(
+                height: 100.h,
               ),
-              SparepartCard(
-                sparePartName: 'Rantai',
-                motorName: 'CBR 150R',
-                price: 'Rp150.000,00',
-                imgSrc: 'assets/images/img_sparepart_rantai.png',
+              GridView.count(
+                primary: false,
+                crossAxisCount: 2,
+                mainAxisSpacing: 20.w,
+                crossAxisSpacing: 10.w,
+                shrinkWrap: true,
+                padding: EdgeInsets.symmetric(horizontal: 24.w),
+                childAspectRatio: 15 / 25,
+                children: [
+                  SparepartCard(
+                    sparePartName: 'Rantai',
+                    motorName: 'CBR 150R',
+                    price: 'Rp150.000,00',
+                    imgSrc: 'assets/images/img_sparepart_rantai.png',
+                  ),
+                  SparepartCard(
+                    sparePartName: 'Rantai',
+                    motorName: 'CBR 150R',
+                    price: 'Rp150.000,00',
+                    imgSrc: 'assets/images/img_sparepart_rantai.png',
+                  ),
+                  SparepartCard(
+                    sparePartName: 'Rantai',
+                    motorName: 'CBR 150R',
+                    price: 'Rp150.000,00',
+                    imgSrc: 'assets/images/img_sparepart_rantai.png',
+                  ),
+                  SparepartCard(
+                    sparePartName: 'Rantai',
+                    motorName: 'CBR 150R',
+                    price: 'Rp150.000,00',
+                    imgSrc: 'assets/images/img_sparepart_rantai.png',
+                  ),
+                  SparepartCard(
+                    sparePartName: 'Rantai',
+                    motorName: 'CBR 150R',
+                    price: 'Rp150.000,00',
+                    imgSrc: 'assets/images/img_sparepart_rantai.png',
+                  ),
+                  SparepartCard(
+                    sparePartName: 'Rantai',
+                    motorName: 'CBR 150R',
+                    price: 'Rp150.000,00',
+                    imgSrc: 'assets/images/img_sparepart_rantai.png',
+                  ),
+                  SparepartCard(
+                    sparePartName: 'Rantai',
+                    motorName: 'CBR 150R',
+                    price: 'Rp150.000,00',
+                    imgSrc: 'assets/images/img_sparepart_rantai.png',
+                  ),
+                ],
               ),
-              SparepartCard(
-                sparePartName: 'Rantai',
-                motorName: 'CBR 150R',
-                price: 'Rp150.000,00',
-                imgSrc: 'assets/images/img_sparepart_rantai.png',
-              ),
-              SparepartCard(
-                sparePartName: 'Rantai',
-                motorName: 'CBR 150R',
-                price: 'Rp150.000,00',
-                imgSrc: 'assets/images/img_sparepart_rantai.png',
-              ),
-              SparepartCard(
-                sparePartName: 'Rantai',
-                motorName: 'CBR 150R',
-                price: 'Rp150.000,00',
-                imgSrc: 'assets/images/img_sparepart_rantai.png',
-              ),
-              SparepartCard(
-                sparePartName: 'Rantai',
-                motorName: 'CBR 150R',
-                price: 'Rp150.000,00',
-                imgSrc: 'assets/images/img_sparepart_rantai.png',
-              ),
-              SparepartCard(
-                sparePartName: 'Rantai',
-                motorName: 'CBR 150R',
-                price: 'Rp150.000,00',
-                imgSrc: 'assets/images/img_sparepart_rantai.png',
+              SizedBox(
+                height: 100.w,
               ),
             ],
           ),
-          SizedBox(
-            height: 100.w,
+          Container(
+            height: 70.w,
+            decoration: BoxDecoration(
+              color: primaryColor,
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(50.r),
+              ),
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                SearchBar(
+                  hintText: 'Coba "Rantai"',
+                  onTap: () {},
+                ),
+              ],
+            ),
           ),
         ],
       ),

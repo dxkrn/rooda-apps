@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: bgColor,
         ),
         debugShowCheckedModeBanner: false,
-        initialRoute: '/',
+        initialRoute: '/katalogSparepartPage',
         getPages: [
           GetPage(
             name: '/',
