@@ -137,64 +137,69 @@ class RiwayatServisCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: deviceWidth - 48.w,
-      margin: EdgeInsets.only(bottom: verticalSpaceBig),
-      padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 12.w),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10.r),
-        border: Border.all(
-          width: 1,
-          color: darkColor,
-        ),
-      ),
-      child: Column(
-        children: [
-          Row(
-            children: [
-              Text(
-                tanggal,
-                style: heading3TextStyle.copyWith(color: darkColor),
-              ),
-            ],
-          ),
-          SizedBox(
-            height: verticalSpaceSmall,
-          ),
-          Divider(
+    return GestureDetector(
+      onTap: () {
+        // Get.toNamed('/');
+      },
+      child: Container(
+        width: deviceWidth - 48.w,
+        margin: EdgeInsets.only(bottom: verticalSpaceBig),
+        padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 12.w),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10.r),
+          border: Border.all(
+            width: 1,
             color: darkColor,
-            height: 1,
-            thickness: 1,
           ),
-          SizedBox(
-            height: verticalSpaceSmall,
-          ),
-          Padding(
-            padding: EdgeInsets.only(bottom: 5.h),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
+        ),
+        child: Column(
+          children: [
+            Row(
               children: [
                 Text(
-                  'Total',
-                  style: normalTextStyle.copyWith(color: darkColor),
-                ),
-                SizedBox(
-                  width: 150.w,
-                  child: Text(
-                    biaya,
-                    style: heading3TextStyle.copyWith(
-                      color: darkColor,
-                    ),
-                    textAlign: TextAlign.right,
-                    maxLines: 10,
-                    // overflow: TextOverflow.ellipsis,
-                  ),
+                  tanggal,
+                  style: heading3TextStyle.copyWith(color: darkColor),
                 ),
               ],
             ),
-          ),
-        ],
+            SizedBox(
+              height: verticalSpaceSmall,
+            ),
+            Divider(
+              color: darkColor,
+              height: 1,
+              thickness: 1,
+            ),
+            SizedBox(
+              height: verticalSpaceSmall,
+            ),
+            Padding(
+              padding: EdgeInsets.only(bottom: 5.h),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Total',
+                    style: normalTextStyle.copyWith(color: darkColor),
+                  ),
+                  SizedBox(
+                    width: 150.w,
+                    child: Text(
+                      biaya,
+                      style: heading3TextStyle.copyWith(
+                        color: darkColor,
+                      ),
+                      textAlign: TextAlign.right,
+                      maxLines: 10,
+                      // overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -211,89 +216,94 @@ class RiwayatPembelianCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: deviceWidth - 48.w,
-      margin: EdgeInsets.only(bottom: verticalSpaceBig),
-      padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 12.w),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10.r),
-        border: Border.all(
-          width: 1,
-          color: darkColor,
-        ),
-      ),
-      child: Column(
-        children: [
-          Row(
-            children: [
-              Text(
-                nama,
-                style: heading3TextStyle.copyWith(color: darkColor),
-              ),
-            ],
-          ),
-          SizedBox(
-            height: verticalSpaceSmall,
-          ),
-          Divider(
+    return GestureDetector(
+      onTap: () {
+        Get.toNamed('/riwayatPembelianDetailPage');
+      },
+      child: Container(
+        width: deviceWidth - 48.w,
+        margin: EdgeInsets.only(bottom: verticalSpaceBig),
+        padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 12.w),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10.r),
+          border: Border.all(
+            width: 1,
             color: darkColor,
-            height: 1,
-            thickness: 1,
           ),
-          SizedBox(
-            height: verticalSpaceSmall,
-          ),
-          Padding(
-            padding: EdgeInsets.only(bottom: 5.h),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
+        ),
+        child: Column(
+          children: [
+            Row(
               children: [
                 Text(
-                  'Harga',
-                  style: normalTextStyle.copyWith(color: darkColor),
-                ),
-                SizedBox(
-                  width: 150.w,
-                  child: Text(
-                    harga,
-                    style: heading3TextStyle.copyWith(
-                      color: darkColor,
-                    ),
-                    textAlign: TextAlign.right,
-                    maxLines: 10,
-                    // overflow: TextOverflow.ellipsis,
-                  ),
+                  nama,
+                  style: heading3TextStyle.copyWith(color: darkColor),
                 ),
               ],
             ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(bottom: 5.h),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Status',
-                  style: normalTextStyle.copyWith(color: darkColor),
-                ),
-                SizedBox(
-                  width: 150.w,
-                  child: Text(
-                    status,
-                    style: heading3TextStyle.copyWith(
-                      color: darkColor,
-                    ),
-                    textAlign: TextAlign.right,
-                    maxLines: 10,
-                    // overflow: TextOverflow.ellipsis,
-                  ),
-                ),
-              ],
+            SizedBox(
+              height: verticalSpaceSmall,
             ),
-          ),
-        ],
+            Divider(
+              color: darkColor,
+              height: 1,
+              thickness: 1,
+            ),
+            SizedBox(
+              height: verticalSpaceSmall,
+            ),
+            Padding(
+              padding: EdgeInsets.only(bottom: 5.h),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Harga',
+                    style: normalTextStyle.copyWith(color: darkColor),
+                  ),
+                  SizedBox(
+                    width: 150.w,
+                    child: Text(
+                      harga,
+                      style: heading3TextStyle.copyWith(
+                        color: darkColor,
+                      ),
+                      textAlign: TextAlign.right,
+                      maxLines: 10,
+                      // overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(bottom: 5.h),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Status',
+                    style: normalTextStyle.copyWith(color: darkColor),
+                  ),
+                  SizedBox(
+                    width: 150.w,
+                    child: Text(
+                      status,
+                      style: heading3TextStyle.copyWith(
+                        color: darkColor,
+                      ),
+                      textAlign: TextAlign.right,
+                      maxLines: 10,
+                      // overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
