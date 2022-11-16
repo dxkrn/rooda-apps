@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:rooda_apps/themes/themes.dart';
+import 'package:rooda_apps/widgets/custom_navbar.dart';
 import 'package:rooda_apps/widgets/motor_card.dart';
 
 class WishlistPage extends StatelessWidget {
@@ -30,6 +31,8 @@ class WishlistPage extends StatelessWidget {
           style: heading1TextStyle,
         ),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: CustomNavbar(),
       body: ListView(
         physics: const BouncingScrollPhysics(),
         children: [

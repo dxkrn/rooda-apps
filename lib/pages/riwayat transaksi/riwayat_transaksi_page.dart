@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:rooda_apps/controllers/riwayat_page_controller.dart';
 import 'package:rooda_apps/themes/themes.dart';
+import 'package:rooda_apps/widgets/custom_navbar.dart';
 
 final RiwayatPageController riwayatPageController =
     Get.put(RiwayatPageController());
@@ -33,6 +34,8 @@ class RiwayatTransaksiPage extends StatelessWidget {
           style: heading1TextStyle,
         ),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: CustomNavbar(),
       body: Stack(
         children: [
           //NOTE: List riwayat Transaksi

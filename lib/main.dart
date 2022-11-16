@@ -37,15 +37,26 @@ class MyApp extends StatelessWidget {
           GetPage(
             name: '/',
             page: () => const HomePage(),
+            transition: Transition.fade,
+            showCupertinoParallax: false,
+            transitionDuration: const Duration(
+              milliseconds: 800,
+            ),
           ),
           GetPage(
             name: '/onboardingPage',
             page: () => const OnboardingPage(),
+            transition: Transition.fade,
+            showCupertinoParallax: false,
+            transitionDuration: const Duration(
+              milliseconds: 800,
+            ),
           ),
           GetPage(
             name: '/loginPage',
             page: () => const LoginPage(),
             transition: Transition.fade,
+            showCupertinoParallax: false,
             transitionDuration: const Duration(
               milliseconds: 800,
             ),
@@ -54,6 +65,7 @@ class MyApp extends StatelessWidget {
             name: '/signupPage',
             page: () => const SignupPage(),
             transition: Transition.fade,
+            showCupertinoParallax: false,
             transitionDuration: const Duration(
               milliseconds: 800,
             ),
@@ -64,6 +76,7 @@ class MyApp extends StatelessWidget {
             name: '/katalogMotorPage',
             page: () => const KatalogMotorPage(),
             transition: Transition.fade,
+            showCupertinoParallax: false,
             transitionDuration: const Duration(
               milliseconds: 800,
             ),
@@ -72,6 +85,7 @@ class MyApp extends StatelessWidget {
             name: '/detailMotorPage',
             page: () => const DetailMotorPage(),
             transition: Transition.fade,
+            showCupertinoParallax: false,
             transitionDuration: const Duration(
               milliseconds: 800,
             ),
@@ -82,6 +96,7 @@ class MyApp extends StatelessWidget {
             name: '/inputDataDiriPage',
             page: () => const InputDataDiriPage(),
             transition: Transition.fade,
+            showCupertinoParallax: false,
             transitionDuration: const Duration(
               milliseconds: 800,
             ),
@@ -90,6 +105,7 @@ class MyApp extends StatelessWidget {
             name: '/paymentPage',
             page: () => const PaymentPage(),
             transition: Transition.fade,
+            showCupertinoParallax: false,
             transitionDuration: const Duration(
               milliseconds: 800,
             ),
@@ -100,6 +116,7 @@ class MyApp extends StatelessWidget {
             name: '/riwayatTransaksiPage',
             page: () => const RiwayatTransaksiPage(),
             transition: Transition.fade,
+            showCupertinoParallax: false,
             transitionDuration: const Duration(
               milliseconds: 800,
             ),
@@ -108,6 +125,7 @@ class MyApp extends StatelessWidget {
             name: '/riwayatPembelianDetailPage',
             page: () => const RiwayatPembelianDetailPage(),
             transition: Transition.fade,
+            showCupertinoParallax: false,
             transitionDuration: const Duration(
               milliseconds: 800,
             ),
@@ -116,6 +134,7 @@ class MyApp extends StatelessWidget {
             name: '/riwayatServisDetailPage',
             page: () => const RiwayatServisDetailPage(),
             transition: Transition.fade,
+            showCupertinoParallax: false,
             transitionDuration: const Duration(
               milliseconds: 800,
             ),
@@ -126,6 +145,7 @@ class MyApp extends StatelessWidget {
             name: '/wishlistPage',
             page: () => const WishlistPage(),
             transition: Transition.fade,
+            showCupertinoParallax: false,
             transitionDuration: const Duration(
               milliseconds: 800,
             ),
@@ -136,6 +156,54 @@ class MyApp extends StatelessWidget {
             name: '/katalogSparepartPage',
             page: () => const KatalogSparepartPage(),
             transition: Transition.fade,
+            showCupertinoParallax: false,
+            transitionDuration: const Duration(
+              milliseconds: 800,
+            ),
+          ),
+
+          //NOTE: for bottom navbar only
+          GetPage(
+            name: '/navbarHomePage',
+            page: () => const HomePage(),
+            transition: Transition.fadeIn,
+            showCupertinoParallax: false,
+            transitionDuration: const Duration(
+              milliseconds: 800,
+            ),
+          ),
+          GetPage(
+            name: '/navbarKatalogPage',
+            page: () => const KatalogMotorPage(),
+            transition: Transition.fadeIn,
+            showCupertinoParallax: false,
+            transitionDuration: const Duration(
+              milliseconds: 800,
+            ),
+          ),
+          GetPage(
+            name: '/navbarRiwayatPage',
+            page: () => const RiwayatTransaksiPage(),
+            transition: Transition.fadeIn,
+            showCupertinoParallax: false,
+            transitionDuration: const Duration(
+              milliseconds: 800,
+            ),
+          ),
+          GetPage(
+            name: '/navbarFavPage',
+            page: () => const WishlistPage(),
+            transition: Transition.fadeIn,
+            showCupertinoParallax: false,
+            transitionDuration: const Duration(
+              milliseconds: 800,
+            ),
+          ),
+          GetPage(
+            name: '/navbarSettingPage',
+            page: () => const HomePage(),
+            transition: Transition.fadeIn,
+            showCupertinoParallax: false,
             transitionDuration: const Duration(
               milliseconds: 800,
             ),

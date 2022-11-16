@@ -22,7 +22,7 @@ class _CustomNavbarState extends State<CustomNavbar> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: deviceWidth - 48.w,
+      width: deviceWidth - 28.w,
       height: 62.w,
       // margin: EdgeInsets.only(bottom: 10.w),
       padding: EdgeInsets.symmetric(horizontal: 20.w),
@@ -44,31 +44,31 @@ class _CustomNavbarState extends State<CustomNavbar> {
             index: 0,
             activeImgSrc: 'assets/icons/icon_navbar_home_active.png',
             inactiveImgSrc: 'assets/icons/icon_navbar_home_inactive.png',
-            pageRoute: '/',
+            pageRoute: '/navbarHomePage',
           ),
           NavbarButton(
             index: 1,
             activeImgSrc: 'assets/icons/icon_navbar_katalog_active.png',
             inactiveImgSrc: 'assets/icons/icon_navbar_katalog_inactive.png',
-            pageRoute: '/katalogMotorPage',
+            pageRoute: '/navbarKatalogPage',
           ),
           NavbarButton(
             index: 2,
             activeImgSrc: 'assets/icons/icon_navbar_riwayat_active.png',
             inactiveImgSrc: 'assets/icons/icon_navbar_riwayat_inactive.png',
-            pageRoute: '/riwayatTransaksiPage',
+            pageRoute: '/navbarRiwayatPage',
           ),
           NavbarButton(
             index: 3,
             activeImgSrc: 'assets/icons/icon_navbar_fav_active.png',
             inactiveImgSrc: 'assets/icons/icon_navbar_fav_inactive.png',
-            pageRoute: '/wishlistPage',
+            pageRoute: '/navbarFavPage',
           ),
           NavbarButton(
             index: 4,
             activeImgSrc: 'assets/icons/icon_navbar_setting_active.png',
             inactiveImgSrc: 'assets/icons/icon_navbar_setting_inactive.png',
-            pageRoute: '/',
+            pageRoute: '/navbarHomePage',
           ),
         ],
       ),
