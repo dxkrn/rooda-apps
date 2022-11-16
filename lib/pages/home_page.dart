@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:rooda_apps/themes/themes.dart';
+import 'package:rooda_apps/widgets/custom_navbar.dart';
 import 'package:rooda_apps/widgets/motor_card.dart';
 import 'package:rooda_apps/widgets/search_bar.dart';
 
@@ -100,6 +101,8 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: CustomNavbar(),
       body: SafeArea(
         child: Container(
           color: primaryColor,
