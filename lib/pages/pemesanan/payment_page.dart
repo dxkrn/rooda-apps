@@ -3,8 +3,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 import 'package:rooda_apps/controllers/bank_more_controller.dart';
+import 'package:rooda_apps/controllers/navbar_controller.dart';
 import 'package:rooda_apps/themes/themes.dart';
 import 'package:rooda_apps/widgets/custom_button.dart';
+
+//NOTE : Navbar  Controller
+final NavbarController navbarController = Get.put(NavbarController());
 
 class PaymentPage extends StatefulWidget {
   const PaymentPage({super.key});
@@ -657,7 +661,7 @@ class _PaymentPageState extends State<PaymentPage> {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      print('Riwayat tapped');
+                      navbarController.activeIndex.value = 2;
                       Get.toNamed('riwayatTransaksiPage');
                     },
                     child: Text(
