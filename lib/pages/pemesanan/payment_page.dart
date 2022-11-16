@@ -123,48 +123,7 @@ class _PaymentPageState extends State<PaymentPage> {
                               padding:
                                   EdgeInsets.only(bottom: verticalSpaceSmall),
                               child: bankBRIController.isExpanded.value
-                                  ? GestureDetector(
-                                      onTap: () {
-                                        // spesifikasiMoreController.isExpanded.value =
-                                        //     !spesifikasiMoreController.isExpanded.value;
-                                        bankBRIController.isExpanded.value =
-                                            !bankBRIController.isExpanded.value;
-                                      },
-                                      child: Container(
-                                        height: 50.w,
-                                        padding: EdgeInsets.symmetric(
-                                            horizontal: 15.w),
-                                        decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(10.r),
-                                          border: Border.all(
-                                            width: 1,
-                                            color: darkColor,
-                                          ),
-                                        ),
-                                        child: Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            Text(
-                                              'Transfer BRI',
-                                              style: heading3TextStyle.copyWith(
-                                                  color: darkColor),
-                                            ),
-                                            SizedBox(
-                                              width: 24.w,
-                                              height: 24.w,
-                                              child: const Image(
-                                                image: AssetImage(
-                                                  'assets/icons/icon_arrow_down.png',
-                                                ),
-                                              ),
-                                            )
-                                          ],
-                                        ),
-                                      ),
-                                    )
-                                  : Container(
+                                  ? Container(
                                       width: deviceWidth - 48.w,
                                       padding: EdgeInsets.symmetric(
                                           horizontal: 15.w, vertical: 12.w),
@@ -285,20 +244,13 @@ class _PaymentPageState extends State<PaymentPage> {
                                           ),
                                         ],
                                       ),
-                                    ),
-                            ),
-
-                            //NOTE : Bank BNI
-                            Container(
-                              padding:
-                                  EdgeInsets.only(bottom: verticalSpaceSmall),
-                              child: bankBNIController.isExpanded.value
-                                  ? GestureDetector(
+                                    )
+                                  : GestureDetector(
                                       onTap: () {
                                         // spesifikasiMoreController.isExpanded.value =
                                         //     !spesifikasiMoreController.isExpanded.value;
-                                        bankBNIController.isExpanded.value =
-                                            !bankBNIController.isExpanded.value;
+                                        bankBRIController.isExpanded.value =
+                                            !bankBRIController.isExpanded.value;
                                       },
                                       child: Container(
                                         height: 50.w,
@@ -317,7 +269,7 @@ class _PaymentPageState extends State<PaymentPage> {
                                               MainAxisAlignment.spaceBetween,
                                           children: [
                                             Text(
-                                              'Transfer BNI',
+                                              'Transfer BRI',
                                               style: heading3TextStyle.copyWith(
                                                   color: darkColor),
                                             ),
@@ -333,8 +285,15 @@ class _PaymentPageState extends State<PaymentPage> {
                                           ],
                                         ),
                                       ),
-                                    )
-                                  : Container(
+                                    ),
+                            ),
+
+                            //NOTE : Bank BNI
+                            Container(
+                              padding:
+                                  EdgeInsets.only(bottom: verticalSpaceSmall),
+                              child: bankBNIController.isExpanded.value
+                                  ? Container(
                                       width: deviceWidth - 48.w,
                                       padding: EdgeInsets.symmetric(
                                           horizontal: 15.w, vertical: 12.w),
@@ -455,20 +414,13 @@ class _PaymentPageState extends State<PaymentPage> {
                                           ),
                                         ],
                                       ),
-                                    ),
-                            ),
-                            //NOTE : Bank Mandiri
-                            Container(
-                              padding:
-                                  EdgeInsets.only(bottom: verticalSpaceSmall),
-                              child: bankMandiriController.isExpanded.value
-                                  ? GestureDetector(
+                                    )
+                                  : GestureDetector(
                                       onTap: () {
                                         // spesifikasiMoreController.isExpanded.value =
                                         //     !spesifikasiMoreController.isExpanded.value;
-                                        bankMandiriController.isExpanded.value =
-                                            !bankMandiriController
-                                                .isExpanded.value;
+                                        bankBNIController.isExpanded.value =
+                                            !bankBNIController.isExpanded.value;
                                       },
                                       child: Container(
                                         height: 50.w,
@@ -487,7 +439,7 @@ class _PaymentPageState extends State<PaymentPage> {
                                               MainAxisAlignment.spaceBetween,
                                           children: [
                                             Text(
-                                              'Transfer Mandiri',
+                                              'Transfer BNI',
                                               style: heading3TextStyle.copyWith(
                                                   color: darkColor),
                                             ),
@@ -503,8 +455,14 @@ class _PaymentPageState extends State<PaymentPage> {
                                           ],
                                         ),
                                       ),
-                                    )
-                                  : Container(
+                                    ),
+                            ),
+                            //NOTE : Bank Mandiri
+                            Container(
+                              padding:
+                                  EdgeInsets.only(bottom: verticalSpaceSmall),
+                              child: bankMandiriController.isExpanded.value
+                                  ? Container(
                                       width: deviceWidth - 48.w,
                                       padding: EdgeInsets.symmetric(
                                           horizontal: 15.w, vertical: 12.w),
@@ -624,6 +582,48 @@ class _PaymentPageState extends State<PaymentPage> {
                                             ),
                                           ),
                                         ],
+                                      ),
+                                    )
+                                  : GestureDetector(
+                                      onTap: () {
+                                        // spesifikasiMoreController.isExpanded.value =
+                                        //     !spesifikasiMoreController.isExpanded.value;
+                                        bankMandiriController.isExpanded.value =
+                                            !bankMandiriController
+                                                .isExpanded.value;
+                                      },
+                                      child: Container(
+                                        height: 50.w,
+                                        padding: EdgeInsets.symmetric(
+                                            horizontal: 15.w),
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(10.r),
+                                          border: Border.all(
+                                            width: 1,
+                                            color: darkColor,
+                                          ),
+                                        ),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Text(
+                                              'Transfer Mandiri',
+                                              style: heading3TextStyle.copyWith(
+                                                  color: darkColor),
+                                            ),
+                                            SizedBox(
+                                              width: 24.w,
+                                              height: 24.w,
+                                              child: const Image(
+                                                image: AssetImage(
+                                                  'assets/icons/icon_arrow_down.png',
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     ),
                             ),
