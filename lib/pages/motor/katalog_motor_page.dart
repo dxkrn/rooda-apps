@@ -120,30 +120,30 @@ class _KatalogMotorPageState extends State<KatalogMotorPage> {
             children: [
               //NOTE : SEARCH BAR
               Container(
-                height: 70.w,
-                decoration: BoxDecoration(
-                  color: primaryColor,
-                  borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(50.r),
+                color: bgColor,
+                child: Container(
+                  height: 70.w,
+                  decoration: BoxDecoration(
+                    color: primaryColor,
+                    borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(50.r),
+                    ),
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      SearchBar(
+                        hintText: 'Coba "Beat"',
+                        onTap: () {},
+                      ),
+                    ],
                   ),
                 ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    SearchBar(
-                      hintText: 'Coba "Beat"',
-                      onTap: () {},
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: 20.w,
               ),
               //NOTE : KATEGORI LIST BUTTON
-              SizedBox(
-                height: 30.w,
-                // color: darkColor,
+              Container(
+                height: 50.w,
+                color: bgColor,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   physics: const BouncingScrollPhysics(),

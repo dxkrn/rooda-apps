@@ -41,6 +41,7 @@ class RiwayatTransaksiPage extends StatelessWidget {
           //NOTE: List riwayat Transaksi
           Obx(
             () => ListView(
+              physics: const BouncingScrollPhysics(),
               children: [
                 SizedBox(
                   height: 60.h,
