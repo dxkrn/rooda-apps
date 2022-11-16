@@ -11,6 +11,7 @@ import 'package:rooda_apps/pages/pemesanan/input_data_diri_page.dart';
 import 'package:rooda_apps/pages/pemesanan/payment_page.dart';
 import 'package:rooda_apps/pages/riwayat%20transaksi/riwayat_pembelian_detail_page.dart';
 import 'package:rooda_apps/pages/riwayat%20transaksi/riwayat_transaksi_page.dart';
+import 'package:rooda_apps/pages/settings/settings_page.dart';
 import 'package:rooda_apps/pages/sparepart/katalog_sparepart_page.dart';
 import 'package:rooda_apps/pages/wishlist/wishlist_page.dart';
 import 'package:rooda_apps/themes/themes.dart';
@@ -201,7 +202,7 @@ class MyApp extends StatelessWidget {
           ),
           GetPage(
             name: '/navbarSettingPage',
-            page: () => const HomePage(),
+            page: () => const SettingsPage(),
             transition: Transition.fadeIn,
             showCupertinoParallax: false,
             transitionDuration: const Duration(

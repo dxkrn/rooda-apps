@@ -31,9 +31,9 @@ class _CustomNavbarState extends State<CustomNavbar> {
         borderRadius: BorderRadius.circular(30.r),
         boxShadow: [
           BoxShadow(
-            blurRadius: 10,
-            color: darkColor.withOpacity(0.2),
-            offset: Offset(0, 2),
+            blurRadius: 5,
+            color: darkColor.withOpacity(0.25),
+            offset: Offset(0, 4),
           ),
         ],
       ),
@@ -68,7 +68,7 @@ class _CustomNavbarState extends State<CustomNavbar> {
             index: 4,
             activeImgSrc: 'assets/icons/icon_navbar_setting_active.png',
             inactiveImgSrc: 'assets/icons/icon_navbar_setting_inactive.png',
-            pageRoute: '/navbarHomePage',
+            pageRoute: '/navbarSettingPage',
           ),
         ],
       ),
